@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>EPiggy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Manjari', sans-serif;
+            background-color: #262626;
+            color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+        }
+        .container .content {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content .avisoConn {
+            margin-bottom: 5rem;
+        }
+        .content .spin {
+            width: 80px;
+            height: 80px;
+            background: transparent;
+            border: 4px solid #f29060;
+            border-top-color: #262626;
+            border-radius: 50%;
+            animation: spin 1.3s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="avisoConn">Sin Conexión</h1>
+            <div class="spin"></div>
+        </div>
+    </div>
+</body>
+</html>

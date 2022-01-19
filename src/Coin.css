@@ -1,0 +1,116 @@
+.coin-container {
+    background-color: #fff;   
+    margin-top: 2rem;
+}
+.coin-row {
+    text-align: center;
+    border-bottom: 1px solid #d7d7d7;
+}
+.coin {
+    margin-bottom: 1rem;
+}
+.coin h1 {
+   margin-bottom: 1rem;
+}
+.coin img {
+   margin-bottom: 1rem;
+}
+
+.coin-symbol {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.coin-data {
+    margin-top: 1rem;
+}
+.coin-price {
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+.coin-volume {
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+.coin-marketcap {
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+.coin-percent {
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+.rojo {
+    color: #f00606;
+}
+.verde {
+    color: #11d811;
+}
+
+
+@media screen and (min-width: 1050px){
+    .coin-container {
+        display: flex;
+        justify-content: center;   
+    }
+    .coin-row {
+        display: flex;
+        flex-direction: row;
+        justify-items: start;
+        align-items: center;
+        height: 80px;
+        border-bottom: 1px solid #d7d7d7;
+        min-width: 900px;
+    }
+    .coin {
+        display: flex;
+        align-items: center;
+        padding-right: 24px;
+        min-width: 300px;
+        margin: 0;
+    }
+    .coin h1 {
+        font-size: 16px;
+        width: 150px;
+        margin: 0;
+    }
+    .coin img {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .coin-symbol {
+        text-transform: uppercase;
+    }
+    .coin-data {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .coin-price {
+        width: 110px;
+        padding: 0;
+    }
+    .coin-volume {
+        width: 160px;
+        margin-left: 30px;
+    }
+    .coin-marketcap {
+        width: 350px;
+        padding: 0;
+    }
+    .coin-percent {
+        width: 100%;
+        padding: 0;
+    }
+    .rojo {
+        color: #f00606;
+    }
+    .verde {
+        color: #11d811;
+    }
+}
